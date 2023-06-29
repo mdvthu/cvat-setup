@@ -29,5 +29,4 @@ chown -R ${username} /home/${username}/.ssh
 
 # install cvat
 test -d /home/${username}/cvat && \
-	sud
-o -u ${username} sh -c 'cd; git clone https://github.com/opencv/cvat.git'
+	sudo -u ${username} sh -c 'cd; git clone https://github.com/opencv/cvat.git'
